@@ -8,7 +8,16 @@
 	</parent>
 	<groupId>cn.guoyukun.crack</groupId>
 	<artifactId>soupui-pro-crack</artifactId>
-	<version>5.0.0</version>
+	<version>5.0.0-SNAPSHOT</version>
+	<properties>
+		<soapui.version>5.0.0</soapui.version>
+	</properties>
+	<repositories>
+		<repository>
+			<id>smartbear-sweden-plugin-repository</id>
+			<url>http://www.soapui.org/repository/maven2/</url>
+		</repository>
+	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>smartbear-sweden-plugin-repository</id>
@@ -17,18 +26,14 @@
 	</pluginRepositories>
 	<dependencies>
 		<dependency>
-			<groupId>com.eviware.soapui</groupId>
+			<groupId>com.smartbear.soapui</groupId>
 			<artifactId>soapui</artifactId>
-			<version>5.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/soapui-5.0.0.jar</systemPath>
+			<version>${soapui.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.eviware.soapui</groupId>
+			<groupId>com.smartbear.soapui</groupId>
 			<artifactId>soapui-pro</artifactId>
-			<version>5.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/soapui-pro-5.0.0.jar</systemPath>
+			<version>${soapui.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.smardec</groupId>
@@ -38,21 +43,7 @@
 			<systemPath>${project.basedir}/lib/license4j-1.3.jar</systemPath>
 		</dependency>
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>com.smartbear.soapui</groupId>
-				<artifactId>soapui-maven-plugin</artifactId>
-				<version>5.0.0</version>
-				<configuration>
-					<projectFile>simple-test-soapui-project.xml</projectFile>
-					<projectProperties>
-						<value>message=Hello World!</value>
-					</projectProperties>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
 
 	<!-- 版本控制信息 -->
 	<scm>
