@@ -8,7 +8,7 @@
 	</parent>
 	<groupId>cn.guoyukun.crack</groupId>
 	<artifactId>soupui-pro-crack</artifactId>
-	<version>5.0.0-SNAPSHOT</version>
+	<version>5.0.0</version>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>smartbear-sweden-plugin-repository</id>
@@ -36,7 +36,7 @@
 			<version>1.3</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/license4j-1.3.jar</systemPath>
-		</dependency>			
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -53,4 +53,11 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- 版本控制信息 -->
+	<scm>
+		<url>https://github.com/gyk001/soapui-pro-crack</url>
+		<connection>scm:git:git@github.com:gyk001/soapui-pro-crack.git</connection>
+		<developerConnection>scm:git:git@github.com:gyk001/soapui-pro-crack.git</developerConnection>
+	</scm>
 </project>

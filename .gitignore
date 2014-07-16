@@ -4,3 +4,7 @@ pom.xml.releaseBackup
 pom.xml.next
 release.properties
 lib/
+.classpath
+.DS_Store
+.project
+.settings/
