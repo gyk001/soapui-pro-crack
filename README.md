@@ -13,11 +13,11 @@ You can get cracked from two ways
  3. Done!
 
 ## Compile package from source
-    
+
 You need git、Maven and JDK for this step
 
  1. clone and complie source code
-    ```bash
+    ```sh
     # get sourcecode
     git clone git@github.com:gyk001/soapui-pro-crack.git
     # switch you soapui version (For example, 5.1.0)
@@ -25,6 +25,7 @@ You need git、Maven and JDK for this step
     # compile
     mvn package
     # then you will get target/soapui-pro-crack-x.y.z.jar
+    
     ```
  2. replace the cracked classes file
  
