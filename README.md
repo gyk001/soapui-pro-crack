@@ -1,16 +1,35 @@
 soapui-pro-crack
 ================
 
-SoapUI Pro 破解
+This is Crack for [SoapUI Pro](http://www.soapui.org/).
+Contains three versions：5.0, 5.1.0, 5.1.1.
 
-5.0 、5.1.0、5.1.1版本分别对应三个不同的包
+You can get cracked from two ways
 
-下载对应破解包，覆盖原文件即可
+## Using precompiled package
 
-下载地址
+ 1. Download package from https://github.com/gyk001/soapui-pro-crack/releases
+ 2. Replace the same name file(should be soapui-pro-x.y.z.jar) in the installation folder
+ 3. Done!
 
-https://github.com/gyk001/soapui-pro-crack/releases
+## Compile package from source
+    
+You need git、Maven and JDK for this step
 
-**仅供学习参考，一切版权归SoapUI软件商所有，请勿用于非法用途！**
+ 1. clone and complie source code
+    ```bash
+    # get sourcecode
+    git clone git@github.com:gyk001/soapui-pro-crack.git
+    # switch you soapui version (For example, 5.1.0)
+    git checkout v5.1.0
+    # compile
+    mvn package
+    # then you will get target/soapui-pro-crack-x.y.z.jar
+    ```
+ 2. replace the cracked classes file
+ 
+ Using compression software, which you usually use open the soapui-pro-x.y.z.jar, then replace all the class file in soapui-pro-crack-x.y.z.jar, such as LicenseHandling.class etc.
 
+ 3. Done!
 
+**For study and reference, everything belongs to SoapUI software vendors all, not for illegal purposes！**
