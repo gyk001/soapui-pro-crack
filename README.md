@@ -20,6 +20,8 @@ You need git、Maven and JDK for this step
     ```sh
     # get sourcecode
     git clone git@github.com:gyk001/soapui-pro-crack.git
+    # navigate to directory
+    cd soapui-pro-crack/
     # switch you soapui version (For example, 5.1.0)
     git checkout v5.1.0
     # compile
